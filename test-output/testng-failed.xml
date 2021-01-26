@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browserName" value="firefox"/>
+  <listeners>
+    <listener class-name="common.Listners"/>
+  </listeners>
+  <test name="Test(failed)" parallel="methods">
+    <classes>
+      <class name="testcases.TC3">
+        <methods>
+          <include name="initialize"/>
+          <include name="valid_login"/>
+        </methods>
+      </class> <!-- testcases.TC3 -->
+      <class name="testcases.TC4">
+        <methods>
+          <include name="invalid_login"/>
+          <include name="initialize"/>
+        </methods>
+      </class> <!-- testcases.TC4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
